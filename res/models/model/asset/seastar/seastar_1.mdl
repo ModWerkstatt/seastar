@@ -4,8 +4,8 @@ local transf = require "transf"
 function data()
 return {
 	boundingInfo = {
-		bbMax = { 14.05, 20, 11.9, },
-		bbMin = { -18.45, -20, 0.00, },
+		bbMax = { 5.2, 9, 4.5, },
+		bbMin = { -7.5, -9, 0.00, },
 	},
 	collider = {
 		params = { },
