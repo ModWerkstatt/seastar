@@ -14,10 +14,10 @@ return {
 	params = {
 		{
 			key = "transall",
-			name = _("Transall C-160"),
+			name = _("Dornier Seastar"),
 			uiType = "ICON_BUTTON",
-			values = { "ui/construction/asset/seastar/seastar_1.tga",  "ui/construction/asset/seastar/seastar_2.tga",},
-			tooltip = _("Transall als Asset"),
+			values = { "ui/construction/asset/seastar/seastar_1.tga", },
+			tooltip = _("Seastar als Asset"),
 		},
 	},
 	updateFn = function(params)
@@ -27,10 +27,6 @@ return {
 		
 		if params.transall == 0 then
 		result.models[#result.models+1] = {id = "asset/seastar/seastar_1.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
-		end
-		
-		if params.transall == 1 then
-		result.models[#result.models+1] = {id = "asset/seastar/seastar_2.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
 		end
 		
 		
