@@ -13,7 +13,7 @@ return {
 	autoRemovable = false,
 	params = {
 		{
-			key = "transall",
+			key = "seastar",
 			name = _("Dornier Seastar"),
 			uiType = "ICON_BUTTON",
 			values = { "ui/construction/asset/seastar/seastar_1.tga", },
@@ -25,7 +25,7 @@ return {
 		result.models = {  }
 		local height = 0
 		
-		if params.transall == 0 then
+		if params.seastar == 0 then
 		result.models[#result.models+1] = {id = "asset/seastar/seastar_1.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
 		end
 		
