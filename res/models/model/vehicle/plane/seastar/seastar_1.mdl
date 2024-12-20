@@ -1033,7 +1033,7 @@ return {
 		},
 		availability = {
 			yearFrom = 1984,
-			yearTo = 2030,
+--			yearTo = 2030,
 		},
 		cost = {
 			price = -1,

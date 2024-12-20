@@ -1,11 +1,13 @@
 function data()
-return { 
+return {
 	type = "ASSET_DEFAULT",
 	description = {
-		name = _("Seastar Asset Set"),			
+		name = _("Seastar Asset Set"),
 		description = _("Statische Seastar Flugzeuge.")
 	},
-	availability = {},
+	availability = {
+			yearFrom = 1984,
+    },
 	buildMode = "MULTI",
 	categories = { "Plane Assets" },
 	order = 212210101,
@@ -24,12 +26,12 @@ return {
 		local result = { }
 		result.models = {  }
 		local height = 0
-		
+
 		if params.seastar == 0 then
 		result.models[#result.models+1] = {id = "asset/seastar/seastar_1.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
 		end
-		
-		
+
+
 		result.terrainAlignmentLists = { {
 			type = "EQUAL",
 			faces =  { }
